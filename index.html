@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title data-i18n="site-title">Kacper Kark's Portfolio</title>
+    <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+
+    <nav class="side-nav">
+        <ul>
+            <li>#<a href="#contact" class="link-hover" data-i18n="nav-contact">contact</a></li>
+            <li>#<a href="#about-me" class="link-hover" data-i18n="nav-about-me">about me</a></li>
+            <li>#<a href="#cv" class="link-hover" data-i18n="nav-cv">cv</a></li>
+            <li>#<a href="#projects" class="link-hover" data-i18n="nav-projects">projects</a></li>
+            <li>#<a href="#certificates" class="link-hover" data-i18n="nav-certificates">certificates</a></li>
+        </ul>
+    </nav>
+
+    <header id="contact">
+        <div class="header-left">
+            <span>+48 142 123 123</span> /
+            <span>seekersi47@gmail.com</span> 
+            <a class="link-hover" href="mailto:seekrsi47@gmail.com">
+                <svg width="1em" height="1em" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect x="4" y="8" width="40" height="32" rx="4" stroke="currentColor" stroke-width="4" fill="none"/>
+                    <path d="M4 10l20 16 20-16" stroke="currentColor" stroke-width="4" fill="none"/>
+                </svg>
+            </a>
+        </div>
+        <div class="header-right">
+            <a class="link-hover" href="https://linkedin.com/in/yourprofile" target="_blank">LinkedIn</a> /
+            <a class="link-hover" href="https://github.com/yourusername" target="_blank">GitHub</a>
+            <div class="language-switcher">
+                <button onclick="setLanguage('en')">EN</button>
+                <button onclick="setLanguage('pl')">PL</button>
+            </div>
+        </div>
+    </header>
+
+    <img src="assets/images/portrait.jpg" alt="Me" class="profile-img">
+
+    <p class="profile-text">
+        <span class="left-text" data-i18n="profile_name">Kacper Kark</span>
+        <span class="center-text" data-i18n="profile_desc">- Python developer & aspiring GameDev</span>
+    </p>
+
+    <div class="slider-container">
+        <div class="slider">
+            <img src="assets/images/logos/gray/unreal-logo-gray.png" alt="Unreal Engine 5">
+            <img src="assets/images/logos/gray/mysql-logo-gray.png" alt="MySQL">
+            <img src="assets/images/logos/gray/blender-logo-gray.png" alt="Blender">
+            <img src="assets/images/logos/gray/cpp-logo-gray.png" alt="C++">
+            <img src="assets/images/logos/gray/csharp-logo-gray.png" alt="C#">
+            <img src="assets/images/logos/gray/css-logo-gray.png" alt="CSS3">
+            <img src="assets/images/logos/gray/django-python-logo-gray.png" alt="Django">
+            <img src="assets/images/logos/gray/github-logo-gray.png" alt="GitHub">
+            <img src="assets/images/logos/gray/html-logo-gray.png" alt="HTML5">
+            <img src="assets/images/logos/gray/postgresql-logo-gray.png" alt="PostgreSQL">
+            <img src="assets/images/logos/gray/postman-logo-gray.png" alt="Postman">
+            <!-- Duplicated logos to create infite effect-->
+            <img src="assets/images/logos/gray/css-logo-gray.png" alt="CSS3">
+            <img src="assets/images/logos/gray/django-python-logo-gray.png" alt="Django">
+            <img src="assets/images/logos/gray/github-logo-gray.png" alt="GitHub">
+            <img src="assets/images/logos/gray/html-logo-gray.png" alt="HTML5">
+            <img src="assets/images/logos/gray/postgresql-logo-gray.png" alt="PostgreSQL">
+            <img src="assets/images/logos/gray/postman-logo-gray.png" alt="Postman">
+        </div>
+    </div>
+
+    <div id="about-me" class="section-title">
+        <p data-i18n="section-about-me">#about me<p>
+    </div>
+
+    <div class="about-me-container">
+        <p data-i18n="about-me">
+            Etiam semper sem in nibh venenatis facilisis vitae ac enim. In hac habitasse platea dictumst. Proin nec magna urna. Suspendisse ornare metus ac nunc lacinia, sit amet pulvinar nibh posuere. Morbi dapibus ornare purus, et ullamcorper ex faucibus sit amet. Nunc porttitor, elit sit amet cursus pretium, sem quam eleifend neque, eu blandit sapien tellus vel nulla. Vivamus dui metus, mattis egestas ullamcorper vel, pretium eu mauris. Ut euismod urna posuere ipsum lacinia sollicitudin.
+            Phasellus nec pulvinar erat, et congue arcu. <br><br> Donec vitae turpis dui. Praesent imperdiet felis sit amet leo sodales, sed interdum augue rhoncus. Morbi neque nulla, luctus a laoreet ut, blandit ac lectus. Nullam mattis, sapien et molestie scelerisque, dolor nunc maximus lacus, nec feugiat dui sapien nec massa. Integer pharetra ut turpis eu dignissim. Phasellus sollicitudin justo sit amet leo tincidunt rhoncus. Aliquam porta nunc at lorem consequat condimentum.
+            Nulla felis mi, porta ut ex eu, condimentum faucibus mauris.
+        </p>
+    </div>
+
+    <div id="cv" class="section-title">
+        <p data-i18n="section-cv">#Curriculum Vitae<p>
+    </div>
+
+    <div class="cv-container">
+        <div class="cv-eng">
+            <p data-i18n="cv-eng">English version of CV</p>
+            <a href="https://github.com/" target="_blank" class="toggle-btn custom-btn">
+                <svg xmlns="http://www.w3.org/2000/svg" width="2.5rem" height="2.5rem" fill="currentColor" viewBox="0 0 24 24">
+                    <path d="M12 3a1 1 0 0 1 1 1v10.586l3.293-3.293a1 1 0 1 1 1.414 1.414l-5 
+                            5a1 1 0 0 1-1.414 0l-5-5a1 1 0 0 1 1.414-1.414L11 14.586V4a1 1 
+                            0 0 1 1-1z"/>
+                    <path d="M5 20a1 1 0 1 1 0-2h14a1 1 0 1 1 0 2H5z"/>
+                </svg>
+            </a>
+        </div>
+        <div class="cv-pl">
+            <p data-i18n="cv-pl">Polish version of CV</p>
+            <a href="https://github.com/" target="_blank" class="toggle-btn custom-btn">
+                <svg xmlns="http://www.w3.org/2000/svg" width="2.5rem" height="2.5rem" fill="currentColor" viewBox="0 0 24 24">
+                    <path d="M12 3a1 1 0 0 1 1 1v10.586l3.293-3.293a1 1 0 1 1 1.414 1.414l-5 
+                            5a1 1 0 0 1-1.414 0l-5-5a1 1 0 0 1 1.414-1.414L11 14.586V4a1 1 
+                            0 0 1 1-1z"/>
+                    <path d="M5 20a1 1 0 1 1 0-2h14a1 1 0 1 1 0 2H5z"/>
+                </svg>
+            </a>
+        </div>
+    </div>
+
+    <div id="projects" class="section-title">
+        <p data-i18n="section-projects">#projects</p>
+    </div>
+
+    <div class="projects-container">
+        <div class="project" id="project1">
+            <img class="miniature-img" src="assets/images/project-photo-example.png" alt="Project 1">
+            <div class="project-content">
+                <h3>Project Title 1</h3>
+                <p class="short-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam sit amet venenatis nisl. Fusce sodales, nisl non tempus tincidunt, turpis ligula laoreet ante, elementum sollicitudin massa lorem eget nunc. Etiam semper sem in nibh venenatis facilisis vitae ac enim. In hac habitasse platea dictumst. Proin nec magna urna. Suspendisse ornare metus ac nunc lacinia, sit amet pulvinar nibh posuere. Morbi dapibus ornare purus, et ullamcorper ex faucibus sit amet. Nunc porttitor, elit sit amet cursus pretium, sem quam eleifend neque, eu blandit sapien tellus vel nulla. Vivamus dui metus, mattis egestas ullamcorper vel, pretium eu mauris. Ut euismod urna posuere ipsum lacinia sollicitudin. Integer justo dolor, volutpat malesuada auctor vel, malesuada at mauris. Mauris pellentesque condimentum dolor, maximus eleifend tellus malesuada sed. Cras imperdiet rutrum nulla.</p>
+                <p class="project-techs">Technologies: Python, MySQL, GitHub</p>
+                <button id="toggleButton" class="toggle-btn custom-btn" onclick="toggleContent()">Show More</button>
+                <div class="project-details">
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam sit amet venenatis nisl. Fusce sodales, nisl non tempus tincidunt, turpis ligula laoreet ante, elementum sollicitudin massa lorem eget nunc. Etiam semper sem in nibh venenatis facilisis vitae ac enim. In hac habitasse platea dictumst. Proin nec magna urna. Suspendisse ornare metus ac nunc lacinia, sit amet pulvinar nibh posuere. Morbi dapibus ornare purus, et ullamcorper ex faucibus sit amet. Nunc porttitor, elit sit amet cursus pretium, sem quam eleifend neque, eu blandit sapien tellus vel nulla. Vivamus dui metus, mattis egestas ullamcorper vel, pretium eu mauris. Ut euismod urna posuere ipsum lacinia sollicitudin. Integer justo dolor, volutpat malesuada auctor vel, malesuada at mauris. Mauris pellentesque condimentum dolor, maximus eleifend tellus malesuada sed. Cras imperdiet rutrum nulla, id bibendum libero semper congue.
+                        Phasellus nec pulvinar erat, et congue arcu. Donec vitae turpis dui. Praesent imperdiet felis sit amet leo sodales, sed interdum augue rhoncus. Morbi neque nulla, luctus a laoreet ut, blandit ac lectus. Nullam mattis, sapien et molestie scelerisque, dolor nunc maximus lacus, nec feugiat dui sapien nec massa. Integer pharetra ut turpis eu dignissim. Phasellus sollicitudin justo sit amet leo tincidunt rhoncus. Aliquam porta nunc at lorem consequat condimentum.
+                        Nulla felis mi, porta ut ex eu, condimentum faucibus mauris. Nulla est nunc, pharetra sed massa eu, porttitor mollis quam. Fusce vel cursus purus. Nunc in efficitur augue, in dapibus leo. Donec fermentum velit eget odio sollicitudin, eget malesuada felis tincidunt. Praesent vel purus quis arcu mollis sagittis. Proin tincidunt tellus ut tincidunt facilisis. Cras nec mi id enim semper condimentum. Pellentesque varius tortor dignissim ultricies suscipit. Suspendisse porta diam nisl. Duis facilisis commodo neque, a vestibulum purus viverra nec. Cras facilisis consectetur purus, at porta mauris scelerisque pellentesque. Duis tincidunt efficitur dolor at vulputate. Pellentesque at dolor ut quam vestibulum luctus a id tortor. Morbi eu feugiat sem, ut venenatis sapien. Pellentesque eleifend hendrerit consequat.
+                    </p>
+                    <img src="assets/images/project-photo-example.png" alt="Project 6">
+                    <p>
+                        Nulla felis mi, porta ut ex eu, condimentum faucibus mauris. Nulla est nunc, pharetra sed massa eu, porttitor mollis quam. Fusce vel cursus purus. Nunc in efficitur augue, in dapibus leo. Donec fermentum velit eget odio sollicitudin, eget malesuada felis tincidunt. Praesent vel purus quis arcu mollis sagittis. Proin tincidunt tellus ut tincidunt facilisis. Cras nec mi id enim semper condimentum. Pellentesque varius tortor dignissim ultricies suscipit. Suspendisse porta diam nisl. Duis facilisis commodo neque, a vestibulum purus viverra nec. Cras facilisis consectetur purus, at porta mauris scelerisque pellentesque. Duis tincidunt efficitur dolor at vulputate. Pellentesque at dolor ut quam vestibulum luctus a id tortor. Morbi eu feugiat sem, ut venenatis sapien. Pellentesque eleifend hendrerit consequat.
+                    </p>
+                    <!-- <a href="https://github.com/yourrepo" target="_blank" class="link-hover">View on GitHub</a> -->
+                    <div class="button-container">
+                        <a href="https://github.com/" target="_blank" class="toggle-btn custom-btn">View on GitHub</a>
+                        <button id="toggleButton" class="toggle-btn custom-btn" onclick="toggleContent()">Show More</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="project" id="project2">
+            <img class="miniature-img" src="assets/images/project-photo-example.png" alt="Project 2">
+            <div class="project-content">
+                <h3>Project Title 2</h3>
+                <p class="short-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam sit amet venenatis nisl. Fusce sodales, nisl non tempus tincidunt, turpis ligula laoreet ante, elementum sollicitudin massa lorem eget nunc. Etiam semper sem in nibh venenatis facilisis vitae ac enim. In hac habitasse platea dictumst. Proin nec magna urna. Suspendisse ornare metus ac nunc lacinia, sit amet pulvinar nibh posuere. Morbi dapibus ornare purus, et ullamcorper ex faucibus sit amet. Nunc porttitor, elit sit amet cursus pretium, sem quam eleifend neque, eu blandit sapien tellus vel nulla. Vivamus dui metus, mattis egestas ullamcorper vel, pretium eu mauris. Ut euismod urna posuere ipsum lacinia sollicitudin. Integer justo dolor, volutpat malesuada auctor vel, malesuada at mauris. Mauris pellentesque condimentum dolor, maximus eleifend tellus malesuada sed. Cras imperdiet rutrum nulla.</p>
+                <p class="project-techs">Technologies: Python, MySQL, GitHub</p>
+                <button class="toggle-btn custom-btn">Show More</button>
+                <div class="project-details">
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam sit amet venenatis nisl. Fusce sodales, nisl non tempus tincidunt, turpis ligula laoreet ante, elementum sollicitudin massa lorem eget nunc. Etiam semper sem in nibh venenatis facilisis vitae ac enim. In hac habitasse platea dictumst. Proin nec magna urna. Suspendisse ornare metus ac nunc lacinia, sit amet pulvinar nibh posuere. Morbi dapibus ornare purus, et ullamcorper ex faucibus sit amet. Nunc porttitor, elit sit amet cursus pretium, sem quam eleifend neque, eu blandit sapien tellus vel nulla. Vivamus dui metus, mattis egestas ullamcorper vel, pretium eu mauris. Ut euismod urna posuere ipsum lacinia sollicitudin. Integer justo dolor, volutpat malesuada auctor vel, malesuada at mauris. Mauris pellentesque condimentum dolor, maximus eleifend tellus malesuada sed. Cras imperdiet rutrum nulla, id bibendum libero semper congue.
+                        Phasellus nec pulvinar erat, et congue arcu. Donec vitae turpis dui. Praesent imperdiet felis sit amet leo sodales, sed interdum augue rhoncus. Morbi neque nulla, luctus a laoreet ut, blandit ac lectus. Nullam mattis, sapien et molestie scelerisque, dolor nunc maximus lacus, nec feugiat dui sapien nec massa. Integer pharetra ut turpis eu dignissim. Phasellus sollicitudin justo sit amet leo tincidunt rhoncus. Aliquam porta nunc at lorem consequat condimentum.
+                        Nulla felis mi, porta ut ex eu, condimentum faucibus mauris. Nulla est nunc, pharetra sed massa eu, porttitor mollis quam. Fusce vel cursus purus. Nunc in efficitur augue, in dapibus leo. Donec fermentum velit eget odio sollicitudin, eget malesuada felis tincidunt. Praesent vel purus quis arcu mollis sagittis. Proin tincidunt tellus ut tincidunt facilisis. Cras nec mi id enim semper condimentum. Pellentesque varius tortor dignissim ultricies suscipit. Suspendisse porta diam nisl. Duis facilisis commodo neque, a vestibulum purus viverra nec. Cras facilisis consectetur purus, at porta mauris scelerisque pellentesque. Duis tincidunt efficitur dolor at vulputate. Pellentesque at dolor ut quam vestibulum luctus a id tortor. Morbi eu feugiat sem, ut venenatis sapien. Pellentesque eleifend hendrerit consequat.
+                    </p>
+                    <img src="assets/images/project-photo-example.png" alt="Project 2">
+                    <p>
+                        Nulla felis mi, porta ut ex eu, condimentum faucibus mauris. Nulla est nunc, pharetra sed massa eu, porttitor mollis quam. Fusce vel cursus purus. Nunc in efficitur augue, in dapibus leo. Donec fermentum velit eget odio sollicitudin, eget malesuada felis tincidunt. Praesent vel purus quis arcu mollis sagittis. Proin tincidunt tellus ut tincidunt facilisis. Cras nec mi id enim semper condimentum. Pellentesque varius tortor dignissim ultricies suscipit. Suspendisse porta diam nisl. Duis facilisis commodo neque, a vestibulum purus viverra nec. Cras facilisis consectetur purus, at porta mauris scelerisque pellentesque. Duis tincidunt efficitur dolor at vulputate. Pellentesque at dolor ut quam vestibulum luctus a id tortor. Morbi eu feugiat sem, ut venenatis sapien. Pellentesque eleifend hendrerit consequat.
+                    </p>
+                    <!-- <a href="https://github.com/yourrepo" target="_blank" class="link-hover">View on GitHub</a> -->
+                    <div class="button-container">
+                        <a href="https://github.com/" target="_blank" class="toggle-btn custom-btn">View on GitHub</a>
+                        <button class="toggle-btn custom-btn" onclick="toggleContent()">Show More</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="project" id="project3">
+            <img class="miniature-img" src="assets/images/project-photo-example.png" alt="Project 1">
+            <div class="project-content">
+                <h3>Project Title 3</h3>
+                <p class="short-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam sit amet venenatis nisl. Fusce sodales, nisl non tempus tincidunt, turpis ligula laoreet ante, elementum sollicitudin massa lorem eget nunc. Etiam semper sem in nibh venenatis facilisis vitae ac enim. In hac habitasse platea dictumst. Proin nec magna urna. Suspendisse ornare metus ac nunc lacinia, sit amet pulvinar nibh posuere. Morbi dapibus ornare purus, et ullamcorper ex faucibus sit amet. Nunc porttitor, elit sit amet cursus pretium, sem quam eleifend neque, eu blandit sapien tellus vel nulla. Vivamus dui metus, mattis egestas ullamcorper vel, pretium eu mauris. Ut euismod urna posuere ipsum lacinia sollicitudin. Integer justo dolor, volutpat malesuada auctor vel, malesuada at mauris. Mauris pellentesque condimentum dolor, maximus eleifend tellus malesuada sed. Cras imperdiet rutrum nulla.</p>
+                <p class="project-techs">Technologies: Python, MySQL, GitHub</p>
+                <button class="toggle-btn custom-btn">Show More</button>
+                <div class="project-details">
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam sit amet venenatis nisl. Fusce sodales, nisl non tempus tincidunt, turpis ligula laoreet ante, elementum sollicitudin massa lorem eget nunc. Etiam semper sem in nibh venenatis facilisis vitae ac enim. In hac habitasse platea dictumst. Proin nec magna urna. Suspendisse ornare metus ac nunc lacinia, sit amet pulvinar nibh posuere. Morbi dapibus ornare purus, et ullamcorper ex faucibus sit amet. Nunc porttitor, elit sit amet cursus pretium, sem quam eleifend neque, eu blandit sapien tellus vel nulla. Vivamus dui metus, mattis egestas ullamcorper vel, pretium eu mauris. Ut euismod urna posuere ipsum lacinia sollicitudin. Integer justo dolor, volutpat malesuada auctor vel, malesuada at mauris. Mauris pellentesque condimentum dolor, maximus eleifend tellus malesuada sed. Cras imperdiet rutrum nulla, id bibendum libero semper congue.
+                        Phasellus nec pulvinar erat, et congue arcu. Donec vitae turpis dui. Praesent imperdiet felis sit amet leo sodales, sed interdum augue rhoncus. Morbi neque nulla, luctus a laoreet ut, blandit ac lectus. Nullam mattis, sapien et molestie scelerisque, dolor nunc maximus lacus, nec feugiat dui sapien nec massa. Integer pharetra ut turpis eu dignissim. Phasellus sollicitudin justo sit amet leo tincidunt rhoncus. Aliquam porta nunc at lorem consequat condimentum.
+                        Nulla felis mi, porta ut ex eu, condimentum faucibus mauris. Nulla est nunc, pharetra sed massa eu, porttitor mollis quam. Fusce vel cursus purus. Nunc in efficitur augue, in dapibus leo. Donec fermentum velit eget odio sollicitudin, eget malesuada felis tincidunt. Praesent vel purus quis arcu mollis sagittis. Proin tincidunt tellus ut tincidunt facilisis. Cras nec mi id enim semper condimentum. Pellentesque varius tortor dignissim ultricies suscipit. Suspendisse porta diam nisl. Duis facilisis commodo neque, a vestibulum purus viverra nec. Cras facilisis consectetur purus, at porta mauris scelerisque pellentesque. Duis tincidunt efficitur dolor at vulputate. Pellentesque at dolor ut quam vestibulum luctus a id tortor. Morbi eu feugiat sem, ut venenatis sapien. Pellentesque eleifend hendrerit consequat.
+                    </p>
+                    <img src="assets/images/project-photo-example.png" alt="Project 6">
+                    <p>
+                        Nulla felis mi, porta ut ex eu, condimentum faucibus mauris. Nulla est nunc, pharetra sed massa eu, porttitor mollis quam. Fusce vel cursus purus. Nunc in efficitur augue, in dapibus leo. Donec fermentum velit eget odio sollicitudin, eget malesuada felis tincidunt. Praesent vel purus quis arcu mollis sagittis. Proin tincidunt tellus ut tincidunt facilisis. Cras nec mi id enim semper condimentum. Pellentesque varius tortor dignissim ultricies suscipit. Suspendisse porta diam nisl. Duis facilisis commodo neque, a vestibulum purus viverra nec. Cras facilisis consectetur purus, at porta mauris scelerisque pellentesque. Duis tincidunt efficitur dolor at vulputate. Pellentesque at dolor ut quam vestibulum luctus a id tortor. Morbi eu feugiat sem, ut venenatis sapien. Pellentesque eleifend hendrerit consequat.
+                    </p>
+                    <!-- <a href="https://github.com/yourrepo" target="_blank" class="link-hover">View on GitHub</a> -->
+                    <div class="button-container">
+                        <a href="https://github.com/" target="_blank" class="toggle-btn custom-btn">View on GitHub</a>
+                        <button class="toggle-btn custom-btn">Show More</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+        <div class="project" id="project4">
+            <img class="miniature-img" src="assets/images/project-photo-example.png" alt="Project 1">
+            <div class="project-content">
+                <h3>Project Title 4</h3>
+                <p class="short-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam sit amet venenatis nisl. Fusce sodales, nisl non tempus tincidunt, turpis ligula laoreet ante, elementum sollicitudin massa lorem eget nunc. Etiam semper sem in nibh venenatis facilisis vitae ac enim. In hac habitasse platea dictumst. Proin nec magna urna. Suspendisse ornare metus ac nunc lacinia, sit amet pulvinar nibh posuere. Morbi dapibus ornare purus, et ullamcorper ex faucibus sit amet. Nunc porttitor, elit sit amet cursus pretium, sem quam eleifend neque, eu blandit sapien tellus vel nulla. Vivamus dui metus, mattis egestas ullamcorper vel, pretium eu mauris. Ut euismod urna posuere ipsum lacinia sollicitudin. Integer justo dolor, volutpat malesuada auctor vel, malesuada at mauris. Mauris pellentesque condimentum dolor, maximus eleifend tellus malesuada sed. Cras imperdiet rutrum nulla.</p>
+                <p class="project-techs">Technologies: Python, MySQL, GitHub</p>
+                <button class="toggle-btn custom-btn">Show More</button>
+                <div class="project-details">
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam sit amet venenatis nisl. Fusce sodales, nisl non tempus tincidunt, turpis ligula laoreet ante, elementum sollicitudin massa lorem eget nunc. Etiam semper sem in nibh venenatis facilisis vitae ac enim. In hac habitasse platea dictumst. Proin nec magna urna. Suspendisse ornare metus ac nunc lacinia, sit amet pulvinar nibh posuere. Morbi dapibus ornare purus, et ullamcorper ex faucibus sit amet. Nunc porttitor, elit sit amet cursus pretium, sem quam eleifend neque, eu blandit sapien tellus vel nulla. Vivamus dui metus, mattis egestas ullamcorper vel, pretium eu mauris. Ut euismod urna posuere ipsum lacinia sollicitudin. Integer justo dolor, volutpat malesuada auctor vel, malesuada at mauris. Mauris pellentesque condimentum dolor, maximus eleifend tellus malesuada sed. Cras imperdiet rutrum nulla, id bibendum libero semper congue.
+                        Phasellus nec pulvinar erat, et congue arcu. Donec vitae turpis dui. Praesent imperdiet felis sit amet leo sodales, sed interdum augue rhoncus. Morbi neque nulla, luctus a laoreet ut, blandit ac lectus. Nullam mattis, sapien et molestie scelerisque, dolor nunc maximus lacus, nec feugiat dui sapien nec massa. Integer pharetra ut turpis eu dignissim. Phasellus sollicitudin justo sit amet leo tincidunt rhoncus. Aliquam porta nunc at lorem consequat condimentum.
+                        Nulla felis mi, porta ut ex eu, condimentum faucibus mauris. Nulla est nunc, pharetra sed massa eu, porttitor mollis quam. Fusce vel cursus purus. Nunc in efficitur augue, in dapibus leo. Donec fermentum velit eget odio sollicitudin, eget malesuada felis tincidunt. Praesent vel purus quis arcu mollis sagittis. Proin tincidunt tellus ut tincidunt facilisis. Cras nec mi id enim semper condimentum. Pellentesque varius tortor dignissim ultricies suscipit. Suspendisse porta diam nisl. Duis facilisis commodo neque, a vestibulum purus viverra nec. Cras facilisis consectetur purus, at porta mauris scelerisque pellentesque. Duis tincidunt efficitur dolor at vulputate. Pellentesque at dolor ut quam vestibulum luctus a id tortor. Morbi eu feugiat sem, ut venenatis sapien. Pellentesque eleifend hendrerit consequat.
+                    </p>
+                    <img src="assets/images/project-photo-example.png" alt="Project 6">
+                    <p>
+                        Nulla felis mi, porta ut ex eu, condimentum faucibus mauris. Nulla est nunc, pharetra sed massa eu, porttitor mollis quam. Fusce vel cursus purus. Nunc in efficitur augue, in dapibus leo. Donec fermentum velit eget odio sollicitudin, eget malesuada felis tincidunt. Praesent vel purus quis arcu mollis sagittis. Proin tincidunt tellus ut tincidunt facilisis. Cras nec mi id enim semper condimentum. Pellentesque varius tortor dignissim ultricies suscipit. Suspendisse porta diam nisl. Duis facilisis commodo neque, a vestibulum purus viverra nec. Cras facilisis consectetur purus, at porta mauris scelerisque pellentesque. Duis tincidunt efficitur dolor at vulputate. Pellentesque at dolor ut quam vestibulum luctus a id tortor. Morbi eu feugiat sem, ut venenatis sapien. Pellentesque eleifend hendrerit consequat.
+                    </p>
+                    <!-- <a href="https://github.com/yourrepo" target="_blank" class="link-hover">View on GitHub</a> -->
+                    <div class="button-container">
+                        <a href="https://github.com/" target="_blank" class="toggle-btn custom-btn">View on GitHub</a>
+                        <button class="toggle-btn custom-btn">Show More</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="project" id="project5">
+            <img class="miniature-img" src="assets/images/project-photo-example.png" alt="Project 1">
+            <div class="project-content">
+                <h3>Project Title 5</h3>
+                <p class="short-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam sit amet venenatis nisl. Fusce sodales, nisl non tempus tincidunt, turpis ligula laoreet ante, elementum sollicitudin massa lorem eget nunc. Etiam semper sem in nibh venenatis facilisis vitae ac enim. In hac habitasse platea dictumst. Proin nec magna urna. Suspendisse ornare metus ac nunc lacinia, sit amet pulvinar nibh posuere. Morbi dapibus ornare purus, et ullamcorper ex faucibus sit amet. Nunc porttitor, elit sit amet cursus pretium, sem quam eleifend neque, eu blandit sapien tellus vel nulla. Vivamus dui metus, mattis egestas ullamcorper vel, pretium eu mauris. Ut euismod urna posuere ipsum lacinia sollicitudin. Integer justo dolor, volutpat malesuada auctor vel, malesuada at mauris. Mauris pellentesque condimentum dolor, maximus eleifend tellus malesuada sed. Cras imperdiet rutrum nulla.</p>
+                <p class="project-techs">Technologies: Python, MySQL, GitHub</p>
+                <button class="toggle-btn custom-btn">Show More</button>
+                <div class="project-details">
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam sit amet venenatis nisl. Fusce sodales, nisl non tempus tincidunt, turpis ligula laoreet ante, elementum sollicitudin massa lorem eget nunc. Etiam semper sem in nibh venenatis facilisis vitae ac enim. In hac habitasse platea dictumst. Proin nec magna urna. Suspendisse ornare metus ac nunc lacinia, sit amet pulvinar nibh posuere. Morbi dapibus ornare purus, et ullamcorper ex faucibus sit amet. Nunc porttitor, elit sit amet cursus pretium, sem quam eleifend neque, eu blandit sapien tellus vel nulla. Vivamus dui metus, mattis egestas ullamcorper vel, pretium eu mauris. Ut euismod urna posuere ipsum lacinia sollicitudin. Integer justo dolor, volutpat malesuada auctor vel, malesuada at mauris. Mauris pellentesque condimentum dolor, maximus eleifend tellus malesuada sed. Cras imperdiet rutrum nulla, id bibendum libero semper congue.
+                        Phasellus nec pulvinar erat, et congue arcu. Donec vitae turpis dui. Praesent imperdiet felis sit amet leo sodales, sed interdum augue rhoncus. Morbi neque nulla, luctus a laoreet ut, blandit ac lectus. Nullam mattis, sapien et molestie scelerisque, dolor nunc maximus lacus, nec feugiat dui sapien nec massa. Integer pharetra ut turpis eu dignissim. Phasellus sollicitudin justo sit amet leo tincidunt rhoncus. Aliquam porta nunc at lorem consequat condimentum.
+                        Nulla felis mi, porta ut ex eu, condimentum faucibus mauris. Nulla est nunc, pharetra sed massa eu, porttitor mollis quam. Fusce vel cursus purus. Nunc in efficitur augue, in dapibus leo. Donec fermentum velit eget odio sollicitudin, eget malesuada felis tincidunt. Praesent vel purus quis arcu mollis sagittis. Proin tincidunt tellus ut tincidunt facilisis. Cras nec mi id enim semper condimentum. Pellentesque varius tortor dignissim ultricies suscipit. Suspendisse porta diam nisl. Duis facilisis commodo neque, a vestibulum purus viverra nec. Cras facilisis consectetur purus, at porta mauris scelerisque pellentesque. Duis tincidunt efficitur dolor at vulputate. Pellentesque at dolor ut quam vestibulum luctus a id tortor. Morbi eu feugiat sem, ut venenatis sapien. Pellentesque eleifend hendrerit consequat.
+                    </p>
+                    <img src="assets/images/project-photo-example.png" alt="Project 6">
+                    <p>
+                        Nulla felis mi, porta ut ex eu, condimentum faucibus mauris. Nulla est nunc, pharetra sed massa eu, porttitor mollis quam. Fusce vel cursus purus. Nunc in efficitur augue, in dapibus leo. Donec fermentum velit eget odio sollicitudin, eget malesuada felis tincidunt. Praesent vel purus quis arcu mollis sagittis. Proin tincidunt tellus ut tincidunt facilisis. Cras nec mi id enim semper condimentum. Pellentesque varius tortor dignissim ultricies suscipit. Suspendisse porta diam nisl. Duis facilisis commodo neque, a vestibulum purus viverra nec. Cras facilisis consectetur purus, at porta mauris scelerisque pellentesque. Duis tincidunt efficitur dolor at vulputate. Pellentesque at dolor ut quam vestibulum luctus a id tortor. Morbi eu feugiat sem, ut venenatis sapien. Pellentesque eleifend hendrerit consequat.
+                    </p>
+                    <!-- <a href="https://github.com/yourrepo" target="_blank" class="link-hover">View on GitHub</a> -->
+                    <div class="button-container">
+                        <a href="https://github.com/" target="_blank" class="toggle-btn custom-btn">View on GitHub</a>
+                        <button class="toggle-btn custom-btn">Show More</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="project" id="project6">
+            <img class="miniature-img" src="assets/images/project-photo-example.png" alt="Project 6">
+            <div class="project-content">
+                <h3>Project Title 6</h3>
+                <p class="short-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam sit amet venenatis nisl. Fusce sodales, nisl non tempus tincidunt, turpis ligula laoreet ante, elementum sollicitudin massa lorem eget nunc. Etiam semper sem in nibh venenatis facilisis vitae ac enim. In hac habitasse platea dictumst. Proin nec magna urna. Suspendisse ornare metus ac nunc lacinia, sit amet pulvinar nibh posuere. Morbi dapibus ornare purus, et ullamcorper ex faucibus sit amet. Nunc porttitor, elit sit amet cursus pretium, sem quam eleifend neque, eu blandit sapien tellus vel nulla. Vivamus dui metus, mattis egestas ullamcorper vel, pretium eu mauris. Ut euismod urna posuere ipsum lacinia sollicitudin. Integer justo dolor, volutpat malesuada auctor vel, malesuada at mauris. Mauris pellentesque condimentum dolor, maximus eleifend tellus malesuada sed. Cras imperdiet rutrum nulla.</p>
+                <p class="project-techs">Technologies: Python, MySQL, GitHub</p>
+                <button class="toggle-btn custom-btn">Show More</button>
+                <div class="project-details">
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam sit amet venenatis nisl. Fusce sodales, nisl non tempus tincidunt, turpis ligula laoreet ante, elementum sollicitudin massa lorem eget nunc. Etiam semper sem in nibh venenatis facilisis vitae ac enim. In hac habitasse platea dictumst. Proin nec magna urna. Suspendisse ornare metus ac nunc lacinia, sit amet pulvinar nibh posuere. Morbi dapibus ornare purus, et ullamcorper ex faucibus sit amet. Nunc porttitor, elit sit amet cursus pretium, sem quam eleifend neque, eu blandit sapien tellus vel nulla. Vivamus dui metus, mattis egestas ullamcorper vel, pretium eu mauris. Ut euismod urna posuere ipsum lacinia sollicitudin. Integer justo dolor, volutpat malesuada auctor vel, malesuada at mauris. Mauris pellentesque condimentum dolor, maximus eleifend tellus malesuada sed. Cras imperdiet rutrum nulla, id bibendum libero semper congue.
+                        Phasellus nec pulvinar erat, et congue arcu. Donec vitae turpis dui. Praesent imperdiet felis sit amet leo sodales, sed interdum augue rhoncus. Morbi neque nulla, luctus a laoreet ut, blandit ac lectus. Nullam mattis, sapien et molestie scelerisque, dolor nunc maximus lacus, nec feugiat dui sapien nec massa. Integer pharetra ut turpis eu dignissim. Phasellus sollicitudin justo sit amet leo tincidunt rhoncus. Aliquam porta nunc at lorem consequat condimentum.
+                        Nulla felis mi, porta ut ex eu, condimentum faucibus mauris. Nulla est nunc, pharetra sed massa eu, porttitor mollis quam. Fusce vel cursus purus. Nunc in efficitur augue, in dapibus leo. Donec fermentum velit eget odio sollicitudin, eget malesuada felis tincidunt. Praesent vel purus quis arcu mollis sagittis. Proin tincidunt tellus ut tincidunt facilisis. Cras nec mi id enim semper condimentum. Pellentesque varius tortor dignissim ultricies suscipit. Suspendisse porta diam nisl. Duis facilisis commodo neque, a vestibulum purus viverra nec. Cras facilisis consectetur purus, at porta mauris scelerisque pellentesque. Duis tincidunt efficitur dolor at vulputate. Pellentesque at dolor ut quam vestibulum luctus a id tortor. Morbi eu feugiat sem, ut venenatis sapien. Pellentesque eleifend hendrerit consequat.
+                    </p>
+                    <img src="assets/images/project-photo-example.png" alt="Project 6">
+                    <p>
+                        Nulla felis mi, porta ut ex eu, condimentum faucibus mauris. Nulla est nunc, pharetra sed massa eu, porttitor mollis quam. Fusce vel cursus purus. Nunc in efficitur augue, in dapibus leo. Donec fermentum velit eget odio sollicitudin, eget malesuada felis tincidunt. Praesent vel purus quis arcu mollis sagittis. Proin tincidunt tellus ut tincidunt facilisis. Cras nec mi id enim semper condimentum. Pellentesque varius tortor dignissim ultricies suscipit. Suspendisse porta diam nisl. Duis facilisis commodo neque, a vestibulum purus viverra nec. Cras facilisis consectetur purus, at porta mauris scelerisque pellentesque. Duis tincidunt efficitur dolor at vulputate. Pellentesque at dolor ut quam vestibulum luctus a id tortor. Morbi eu feugiat sem, ut venenatis sapien. Pellentesque eleifend hendrerit consequat.
+                    </p>
+                    <!-- <a href="https://github.com/yourrepo" target="_blank" class="link-hover">View on GitHub</a> -->
+                    <div class="button-container">
+                        <a href="https://github.com/" target="_blank" class="toggle-btn custom-btn">View on GitHub</a>
+                        <button class="toggle-btn custom-btn">Show More</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="certificates" class="section-title">
+        <p>#certificates</p>
+    </div>
+
+    <div class="certificates-conatiner">
+        <div class="certificate">
+            <div class="certificate-title">
+                <h3>certificates dsksdasd 2</h3>
+                <div class="c-btn-area">
+                    <button class="toggle-btn custom-btn">Show More</button>
+                </div>
+            </div>
+            <div class="certificate-details">
+                <p>Phasellus non est turpis. Nam commodo viverra sapien eget congue. In hac habitasse platea dictumst. Aenean sed enim tortor. Vestibulum viverra urna vulputate dolor iaculis consectetur. Donec pulvinar finibus dapibus. Quisque ultrices erat nec magna bibendum, pretium malesuada erat volutpat. Quisque congue accumsan elit, vel rutrum orci. Maecenas quis molestie purus. Quisque eget velit dui. Integer tincidunt orci nibh, sed finibus mauris pharetra ut. Donec sodales, dui id accumsan pharetra, turpis dolor ullamcorper mauris, quis placerat sapien dui vel ipsum. Mauris sit amet turpis turpis.</p>
+            </div>
+        </div>
+    
+        <div class="certificate">
+            <div class="certificate-title">
+                <h3>certificates dsksdasd 2</h3>
+                <div class="c-btn-area">
+                    <button class="toggle-btn custom-btn">Show More</button>
+                </div>
+            </div>
+            <div class="certificate-details">
+                <p>Phasellus non est turpis. Nam commodo viverra sapien eget congue. In hac habitasse platea dictumst. Aenean sed enim tortor. Vestibulum viverra urna vulputate dolor iaculis consectetur. Donec pulvinar finibus dapibus. Quisque ultrices erat nec magna bibendum, pretium malesuada erat volutpat. Quisque congue accumsan elit, vel rutrum orci. Maecenas quis molestie purus. Quisque eget velit dui. Integer tincidunt orci nibh, sed finibus mauris pharetra ut. Donec sodales, dui id accumsan pharetra, turpis dolor ullamcorper mauris, quis placerat sapien dui vel ipsum. Mauris sit amet turpis turpis.</p>
+                <a href="https://www.udemy.com/"></a>
+            </div>
+        </div>
+
+        <div class="certificate">
+            <div class="certificate-title">
+                <h3>certificates dsksdasd 2</h3>
+                <div class="c-btn-area">
+                    <button class="toggle-btn custom-btn">Show More</button>
+                </div>
+            </div>
+            <div class="certificate-details">
+                <p>Phasellus non est turpis. Nam commodo viverra sapien eget congue. In hac habitasse platea dictumst. Aenean sed enim tortor. Vestibulum viverra urna vulputate dolor iaculis consectetur. Donec pulvinar finibus dapibus. Quisque ultrices erat nec magna bibendum, pretium malesuada erat volutpat. Quisque congue accumsan elit, vel rutrum orci. Maecenas quis molestie purus. Quisque eget velit dui. Integer tincidunt orci nibh, sed finibus mauris pharetra ut. Donec sodales, dui id accumsan pharetra, turpis dolor ullamcorper mauris, quis placerat sapien dui vel ipsum. Mauris sit amet turpis turpis.</p>
+                <a href="https://www.udemy.com/"></a>
+            </div>
+        </div>
+
+        <div class="certificate">
+            <div class="certificate-title">
+                <h3>certificates dsksdasd 2</h3>
+                <div class="c-btn-area">
+                    <button class="toggle-btn custom-btn">Show More</button>
+                </div>
+            </div>
+            <div class="certificate-details">
+                <p>Phasellus non est turpis. Nam commodo viverra sapien eget congue. In hac habitasse platea dictumst. Aenean sed enim tortor. Vestibulum viverra urna vulputate dolor iaculis consectetur. Donec pulvinar finibus dapibus. Quisque ultrices erat nec magna bibendum, pretium malesuada erat volutpat. Quisque congue accumsan elit, vel rutrum orci. Maecenas quis molestie purus. Quisque eget velit dui. Integer tincidunt orci nibh, sed finibus mauris pharetra ut. Donec sodales, dui id accumsan pharetra, turpis dolor ullamcorper mauris, quis placerat sapien dui vel ipsum. Mauris sit amet turpis turpis.</p>
+                <a href="https://www.udemy.com/"></a>
+            </div>
+        </div>
+
+        <div class="certificate">
+            <div class="certificate-title">
+                <h3>certificates dsksdasd 2</h3>
+                <div class="c-btn-area">
+                    <button class="toggle-btn custom-btn">Show More</button>
+                </div>
+            </div>
+            <div class="certificate-details">
+                <p>Phasellus non est turpis. Nam commodo viverra sapien eget congue. In hac habitasse platea dictumst. Aenean sed enim tortor. Vestibulum viverra urna vulputate dolor iaculis consectetur. Donec pulvinar finibus dapibus. Quisque ultrices erat nec magna bibendum, pretium malesuada erat volutpat. Quisque congue accumsan elit, vel rutrum orci. Maecenas quis molestie purus. Quisque eget velit dui. Integer tincidunt orci nibh, sed finibus mauris pharetra ut. Donec sodales, dui id accumsan pharetra, turpis dolor ullamcorper mauris, quis placerat sapien dui vel ipsum. Mauris sit amet turpis turpis.</p>
+                <a href="https://www.udemy.com/"></a>
+            </div>
+        </div>
+
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Kacper Kark. All rights reserved.</p>
+    </footer>
+
+
+
+    <script src="scripts.js"></script>
+</body>
+</html> 

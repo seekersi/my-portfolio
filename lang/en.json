@@ -1,0 +1,25 @@
+{
+    "nav-contact": "Contact",
+    "nav-about-me": "About Me",
+    "nav-cv": "CV",
+    "nav-projects": "Projects",
+    "nav-certificates": "Certificates",
+    "profile_name": "Kacper Kark",
+    "profile_desc": "- Python developer & aspiring GameDev",
+    "section-about-me": "#About Me",
+    "section-cv": "#Curriculum Vitae",
+    "section-projects": "#Projects",
+    "section-certificates": "#Certificates",
+    "show-more-btn": "Show More",
+    "show-less-btn": "Show Less",
+    "about-me": "Etiam semper sem in nibh venenatis facilisis vitae ac enim. In hac habitasse platea dictumst. Proin nec magna urna. Suspendisse ornare metus ac nunc lacinia, sit amet pulvinar nibh posuere. Morbi dapibus ornare purus, et ullamcorper ex faucibus sit amet. Nunc porttitor, elit sit amet cursus pretium, sem quam eleifend neque, eu blandit sapien tellus vel nulla. Vivamus dui metus, mattis egestas ullamcorper vel, pretium eu mauris. Ut euismod urna posuere ipsum lacinia sollicitudin.<br><br>Phasellus nec pulvinar erat, et congue arcu. <br><br> Donec vitae turpis dui. Praesent imperdiet felis sit amet leo sodales, sed interdum augue rhoncus. Morbi neque nulla, luctus a laoreet ut, blandit ac lectus. Nullam mattis, sapien et molestie scelerisque, dolor nunc maximus lacus, nec feugiat dui sapien nec massa. Integer pharetra ut turpis eu dignissim. Phasellus sollicitudin justo sit amet leo tincidunt rhoncus. Aliquam porta nunc at lorem consequat condimentum.<br><br>Nulla felis mi, porta ut ex eu, condimentum faucibus mauris.",
+    "cv-eng": "English version of CV",
+    "cv-pl": "Polish version of CV",
+    "project1-title": "",
+    "project1-desc": "",
+    "project1-tech": ""
+      
+
+
+
+}
