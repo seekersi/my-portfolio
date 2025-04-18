@@ -1,45 +1,9 @@
-// async function setLanguage(lang) {
-//     try {
-//         const response = await fetch(`lang/${lang}.json`);
-//         const translations = await response.json();
-
-//         console.log("Loaded translations:", translations);
-
-//         document.querySelectorAll("[data-i18n]").forEach(element => {
-//             const key = element.getAttribute("data-i18n");
-//             const newText = translations[key];
-
-//             console.log(`Looking for key: ${key}, found: ${newText}`);
-
-//             if (newText) {
-//                 element.textContent = newText;
-//             } else {
-//                 console.warn(`No translation found for: ${key}`);
-//             }
-//         });
-
-//         localStorage.setItem("lang", lang);
-//     } catch (error) {
-//         console.error("Language file loading error:", error);
-//     }
-// }
-
-// document.addEventListener("DOMContentLoaded", () => {
-//     const savedLang = localStorage.getItem("lang") || "en";
-//     setLanguage(savedLang);
-// });
-
-let currentTranslations = {};
-let isExpanded = false; // Keeps track of current state
-
 async function setLanguage(lang) {
     try {
         const response = await fetch(`lang/${lang}.json`);
         const translations = await response.json();
 
         console.log("Loaded translations:", translations);
-
-        currentTranslations = translations;
 
         document.querySelectorAll("[data-i18n]").forEach(element => {
             const key = element.getAttribute("data-i18n");
@@ -54,14 +18,6 @@ async function setLanguage(lang) {
             }
         });
 
-        // Handle "Show More / Show Less" button translation
-        const toggleBtn = document.getElementById("toggleButton");
-        if (toggleBtn) {
-            toggleBtn.textContent = isExpanded
-                ? translations["show-less"]
-                : translations["show-more"];
-        }
-
         localStorage.setItem("lang", lang);
     } catch (error) {
         console.error("Language file loading error:", error);
@@ -72,21 +28,6 @@ document.addEventListener("DOMContentLoaded", () => {
     const savedLang = localStorage.getItem("lang") || "en";
     setLanguage(savedLang);
 });
-
-// Optional: click handler for button
-function toggleContent() {
-    const toggleBtn = document.getElementById("toggleButton");
-    isExpanded = !isExpanded;
-
-    if (toggleBtn && currentTranslations) {
-        toggleBtn.textContent = isExpanded
-            ? currentTranslations["show-less"]
-            : currentTranslations["show-more"];
-    }
-
-    // Add show/hide content logic here if needed
-}
-
 
 document.addEventListener("DOMContentLoaded", function () {
     const buttons = document.querySelectorAll(".toggle-btn");
